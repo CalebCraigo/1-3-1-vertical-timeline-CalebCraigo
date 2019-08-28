@@ -1,53 +1,107 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-size: 5pt;
-  font-family: Helvetica, arial,sans-serif;
-  background-color: #A9A9A9;
+  font-family: sans-serif;
   font-style: none;
+  font-size: 10pt;
+}
+body {
+  background-color: #A9A9A9;
 }
 button {
 background-color: #106189;
-border: none;
+border: 1px #106189;
+border-radius: 5%;
 color: white;
 padding: 5px 13px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 15px;
+position: relative;
+margin-left: 0px;
+margin-bottom: 0px;
 }
-
+.button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* box one */
 .boxone {
   border: solid #FFFFFF 1px;
+  border-radius: 1%;
   background-color: #FFFFFF;
-  margin-right: 750px;
-  margin-left: 155px;
+  margin-right: 695px;
+  margin-left: 167px;
   margin-top: 50px;
   padding: 25px;
   padding-bottom: 8px;
-  padding-top: 7px;
+  padding-top: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
+/* pencil icon */
+/* .boxone img{
+  width: 1%;
+} */
 
+.dateone {
+  position: absolute;
+  border: solid #FD3756 1px;
+  background-color: #FD3756;
+  color: white;
+  padding: 5px 13px;
+  font-size: 15px;
+  margin-left: 267px;
+  margin-top: -16px;
+}
+/* box two */
+.datetwo {
+  position: absolute;
+  border: solid #FD3756 1px;
+  background-color: #FD3756;
+  color: white;
+  padding: 5px 13px;
+  font-size: 15px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
 .boxtwo {
   border: #FFFFFF 1px;
+  border-radius: 1%;
   background-color: #FFFFFF;
-  margin-left: 750px;
+  margin-left: 695px;
   margin-right: 155px;
   margin-top: 50px;
-  padding: 20px;
-  padding-bottom: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  position:relative;
 }
-
+.cardtitle {
+  font-size: 20pt;
+  padding-left: 20px;
+  position: relative;
+  margin-top: -49px;
+  color: white;
+}
+.cardtext {
+  padding: 25px;
+  padding-bottom: 8px;
+  padding-top: 15px;;
+}
+/* doggo picture */
+img{
+  width: 100%;
+}
+/* box three */
 .boxthree {
   border: solid #FFFFFF 1px;
+  border-radius: 1%;
   background-color: #FFFFFF;
-  font-color: #969697;
-  margin-right: 750px;
+  margin-right: 695px;
   margin-left: 150px;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
 }
 .boxthree blockquote{
   content:"";
@@ -55,24 +109,69 @@ font-size: 15px;
   z-index: 0;
   top: 4px;
   bottom: -298px;
-  left: 26%;
+  left: 29%;
   border-left: 5px solid #105983;
   transform: translate(-50%);
 }
 .boxthree p {
-  padding-left: 25px;
+  padding-left: 15px;
 }
+.datethree {
+  position: absolute;
+  border: solid #FD3756 1px;
+  background-color: #FD3756;
+  color: white;
+  padding: 5px 13px;
+  font-size: 15px;
+  margin-left: 291px;
+  margin-top: -21px;
+}
+/* box three */
+
 /* .boxone p {
   height: 25%;
   width: 25%;
 } */
+
+
+/* vertcal line */
 .vertical-line:after {
     content:"";
     position: absolute;
-    z-index: -1;
     top: 29px;
-    bottom: -200px;
+    bottom: -290px;
     left: 50%;
     border-left: 5px solid #105983;
     transform: translate(-50%);
+}
+
+.fas fa-pen-square: {
+  color: #105983;
+}
+
+/* body div.boxone::before {
+  content:"";
+  left: 0px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ABE7D0 transparent transparent;
+  top: 60px;
+} */
+
+.boxone::after {
+  content:"";
+  height: 0px;
+  width: 0px;
+  z-index: -1;
+  border-right: solid 10px #CACACA;
+
+  border-left: solid 10px transparent;
+  border-top: solid 10px transparent;
+
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.boxone img{
+  position: absolute;
+  width: 1%;
 }
