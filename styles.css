@@ -38,6 +38,7 @@ margin-bottom: 0px;
   padding-top: 15px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
+
 /* pencil icon */
 /* .boxone i {
   position: absolute;
@@ -77,7 +78,7 @@ margin-bottom: 0px;
   margin-right: 155px;
   margin-top: 50px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
-  position:relative;
+  /* position:relative; */
 }
 .cardtitle {
   font-size: 20pt;
@@ -163,6 +164,19 @@ img{
   border-bottom: 10px solid transparent;
 
   border-right:10px solid white; */
+
+
+.boxone:: after {
+  content: '';
+  postiion: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 10px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
 
 .boxone img{
   position: absolute;
