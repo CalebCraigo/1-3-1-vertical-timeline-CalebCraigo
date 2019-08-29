@@ -39,9 +39,10 @@ margin-bottom: 0px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 /* pencil icon */
-/* .boxone img{
-  width: 1%;
-} */
+/* .boxone i {
+  position: absolute;
+  top: 500px; */
+
 
 .dateone {
   position: absolute;
@@ -52,6 +53,10 @@ margin-bottom: 0px;
   font-size: 15px;
   margin-left: 267px;
   margin-top: -16px;
+}
+
+.title {
+  font-size: 20pt;
 }
 /* box two */
 .datetwo {
@@ -126,51 +131,39 @@ img{
   margin-left: 291px;
   margin-top: -21px;
 }
-/* box three */
-
-/* .boxone p {
-  height: 25%;
-  width: 25%;
+/* .boxone i {
+  position: absolute;
+  top: 500px;
 } */
-
 
 /* vertcal line */
 .vertical-line:after {
     content:"";
     position: absolute;
     top: 29px;
-    bottom: -290px;
+    bottom: -390px;
     left: 50%;
     border-left: 5px solid #105983;
     transform: translate(-50%);
 }
+/* .arrow-right {
 
-.fas fa-pen-square: {
-  color: #105983;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid white;
 }
-
-/* body div.boxone::before {
-  content:"";
-  left: 0px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #ABE7D0 transparent transparent;
-  top: 60px;
-} */
-
-.boxone::after {
-  content:"";
-  height: 0px;
-  width: 0px;
-  z-index: -1;
-  border-right: solid 10px #CACACA;
-
-  border-left: solid 10px transparent;
-  border-top: solid 10px transparent;
-
+.arrow-left {
   position: absolute;
-  top:0;
-  right: 0;
-}
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid white; */
+
 .boxone img{
   position: absolute;
   width: 1%;
